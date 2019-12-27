@@ -178,7 +178,7 @@ class Task extends Component {
 						onKeyPress={::this.keypress}
 						placeholder="Введите текст..."
 					/>
-					<Tooltip title="Отпраить">
+					<Tooltip title="Отпраить (Ctrl+Enter)">
 						<Button type="ghost" className="send" icon="form" onClick={::this.send} />
 					</Tooltip>
 				</Spin>
