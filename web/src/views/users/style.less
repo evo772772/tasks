@@ -1,0 +1,23 @@
+@import './../../../node_modules/antd/lib/style/themes/default.less';
+
+#users .ant-table-row {
+
+	cursor: pointer;
+
+	td { color: @text-color; }
+
+	&.deleted td { color: @text-color-secondary; }
+	&:hover td { color: @primary-color; }
+
+}
+
+.user-form-drawer {
+
+	.ant-form-vertical.ant-form-item { padding: 0; }
+	.field-error { margin: 0; padding: 0; }
+	.ant-drawer-body { padding: 0; }
+	.ant-row:not(.ant-form-item) { padding: 12px 12px 0 12px; }
+	.ant-col:not(.ant-form-item-label):not(.ant-form-item-control-wrapper) { padding: 0 12px; }
+	.ant-btn-primary { margin-right: 8px; }
+
+}

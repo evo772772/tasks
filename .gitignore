@@ -1,0 +1,7 @@
+/api/node_modules/
+/api/logs/
+/api/pm2.config.js
+/api/config/index.js
+/web/node_modules/
+/web/dist/
+/web/src/config.jsr

@@ -1,0 +1,12 @@
+@import './../../../node_modules/antd/lib/style/themes/default.less';
+
+#tasks .ant-table-row {
+
+	cursor: pointer;
+
+	td { color: @text-color; }
+
+	&.deleted td { color: @text-color-secondary; }
+	&:hover td { color: @primary-color; }
+
+}

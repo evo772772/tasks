@@ -1,0 +1,45 @@
+const path = require('path');
+const pkg  = require('./../package.json');
+
+module.exports = {
+
+	package: pkg,
+
+	cwd  : process.cwd(),
+	port : 3000,
+
+	request: {
+		methods : ['POST'],
+		types   : [
+			'application/json',
+			'application/json-patch+json',
+			'application/vnd.api+json',
+			'application/csp-report'
+		]
+	},
+
+	dt  : 'DD.MM.YYYY',
+	dtt : 'DD.MM.YYYY HH:MM',
+
+	db: {
+		host     : '',
+		database : '',
+		user     : '',
+		password : ''
+	},
+
+	session: {
+		salt : 'f28ebc0db82fd46eeca66d7b71d47c8b',
+		name : 'b869552df5d73fa64a03e80104dd983a'
+	},
+
+	get logs() { return path.resolve(this.cwd, 'logs'); },
+
+	files: {
+		availableExts : ['jpe?g', 'png', 'docx?', 'xlsx?', 'pdf'],
+		get path() {
+			return path.resolve(this.cwd, 'files');
+		}
+	}
+
+}

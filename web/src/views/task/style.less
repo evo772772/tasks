@@ -1,0 +1,134 @@
+@import './../../../node_modules/antd/lib/style/themes/default.less';
+
+#task.view {
+
+	padding-bottom: 0;
+	padding-right: 0;
+
+	.ant-page-header { padding-right: @padding-md; }
+
+	.messages {
+
+		overflow: auto;
+		padding-right: @padding-md / 2;
+
+	}
+
+	.message {
+
+		padding: @padding-md / 2 @padding-md / 2 @padding-md / 2 0;
+		margin: @padding-md / 2 0;
+		background-color: @background-color-light;
+
+		&.is-read { background-color: @white; }
+
+		&.right {
+
+			.wrapper { float: right; }
+
+			.content {
+
+				float: right;
+				background-color: @geekblue-1;
+
+			}
+
+		}
+
+		&.system {
+
+			text-align: center;
+			color: @text-color;
+			font-weight: bold;
+
+		}
+
+		.wrapper {
+
+			position: relative;
+			float: left;
+			max-width: 60%;
+			min-width: 300px;
+
+		}
+
+		.ant-avatar {
+
+			position: absolute;
+			left: 0;
+			bottom: 0;
+
+		}
+
+		.date {
+
+			font-size: 12px;
+			color: @text-color-secondary;
+			margin-left: 48px;
+
+		}
+
+		.content {
+
+			width: calc(100% - 48px);
+			margin-left: 48px;
+			padding: @padding-md + @padding-md / 2 @padding-md @padding-md @padding-md;
+			margin-bottom: @padding-md / 4;
+			background-color: @yellow-1;
+
+			.text {
+				font-size: 14px;
+				color: @text-color;
+			}
+
+		}
+
+	}
+
+	.input-wrapper {
+
+		border-top: 1px solid @border-color-base;
+		padding: @padding-md / 2 0;
+		margin-right: @padding-md;
+
+		.ant-btn {
+
+			border: 0;
+
+			&.file-add { float: left; }
+			&.send { float: right; }
+
+		}
+
+		textarea {
+
+			border: 0;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			resize: none;
+			margin-top: 8px;
+			width: calc(100% - 72px);
+			outline: none;
+
+		}
+
+	}
+
+}
+
+#task-info {
+
+	background-color: @white;
+	box-shadow: @box-shadow-base;
+	padding: @padding-md;
+
+	.ant-row > div { color: @text-color; }
+	.ant-row > div:first-child {
+		font-weight: bold;
+		padding-right: @padding-md / 2;
+	}
+
+	.ant-btn { margin-top: @padding-md; }
+
+}
